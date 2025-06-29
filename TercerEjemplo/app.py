@@ -13,7 +13,7 @@ class Ejemplo1Window(QMainWindow):
         loadUi('promedio.ui',self)
         self.setWindowTitle('Primer ejemplo GUI en PyQt5')
         self.btnCalcular.clicked.connect(self.calcularPromedio)
-        self.conexion = mysql_connector.connect(user='root', password='12345678', host='localhost', database='escuela')
+        self.conexion = mysql_connector.connect(user='root', password='1234', host='localhost', database='escuela')
         self.cargarDatos()
         self.tblViewDatos.selectionModel().selectionChanged.connect(self.cargarDatosSeleccionados)
 
